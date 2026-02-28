@@ -1,0 +1,6 @@
+*   e2a9beb merge: v2 ke v1
+|\  
+| * e069905 feat: ini v1
+* | 7318c81 feat: ini versi 2
+|/  
+* 9af4652 feat:inisiasi github
