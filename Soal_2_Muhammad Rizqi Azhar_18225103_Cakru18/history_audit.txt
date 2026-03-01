@@ -1,0 +1,29 @@
+    1  uname -sr && whoami
+    2  sudo apt update && sudo apt upgrade -y
+    3  sudo apt install build-essential -y
+    4  which g++ > compiler_trace.log && g++ --version | head -n 1 >> compiler_trace.log
+    5  cat compiler_trace.log
+    6  mkdir ~/recovery_ops
+    7  cd ~/recovery_ops
+    8  wget raw.githubusercontent.com/aryadiiptaa/YESS/refs/heads/main/system_raw.txt -o system_raw.txt
+    9  ls -l
+   10  head -n 1260 system_raw.txt | tail -n 11 > recovered_sector.txt
+   11  cat recovered_sector.txt
+   12  rm system_raw.txt
+   13  ls
+   14  rm system_raw.txt*
+   15  ls
+   16  ls -l
+   17  code .
+   18  ls
+   19  rm recovered_sector.txt
+   20  ls
+   21  curl -o system_raw.txt https://raw.githubusercontent.com/aryadiiptaa/YESS/refs/heads/main/system_raw.txt
+   22  ls -l
+   23  head -n 1260 system_raw.txt | tail -n 11 > recovered_sector.txt
+   24  ls
+   25  cat recovered_sector.txt
+   26  rm system_raw.txt
+   27  ls
+   28  code .
+   29  history | tail -n 30 > history_audit.txt
