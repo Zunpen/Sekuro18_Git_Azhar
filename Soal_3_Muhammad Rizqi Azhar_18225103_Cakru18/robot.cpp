@@ -1,7 +1,7 @@
-#include <iostream>
-using namespace std;
+#include <iostream> //input output
+using namespace std; // agar tidak perlu std::
 
-class robot
+class robot // membuat ojek class robot
 {
 private:
     int jarak;
@@ -12,6 +12,7 @@ public:
         jarak = inputjarak;
     }
 
+// tipe status yang berbeda-beda
     void prosesLogika() {
         if (jarak > 20) {
             status = "Maju Mencari Api";
@@ -23,12 +24,13 @@ public:
             status = "Posisi Tepat! gas semprot kali ya!";
         }
     }
-
+//output
     void cetakStatus() {
         cout << "[Sensor: " << jarak << " cm] -> Action: " << status << endl;
     }
 };
 
+// while loop
 int main() 
 {
     robot robot;
@@ -41,6 +43,7 @@ int main()
         if (input == 67) {
             cout << "Program dihentikan.\n";
             break;
+            //{input 67 maka break}
         }
         else {
         robot.inputSensor(input);
@@ -49,4 +52,5 @@ int main()
         }
     }
     return 0;
+
 };
